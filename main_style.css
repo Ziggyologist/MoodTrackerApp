@@ -180,7 +180,10 @@
   color: #3f2724;
   text-align: left;
   font-size: 21px;
+  border: solid 3 px black;
+  padding-top: 10vh;
 }
+
 .list_body ol {
   color: black;
 }
@@ -209,4 +212,27 @@
 
 .list_body li {
   padding-top: 0.5rem;
+}
+
+.back_btn {
+  font-size: 21px;
+  /* width: 30vw; */
+  /* font-weight: 600; */
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  color: black;
+  background-color: #82b69d;
+  border-radius: 0.5rem;
+  /* margin: 1vh 5vw 2vh 5vw; */
+  /* box-shadow: 0px -3px 2px 3px #ffffff, 0px 3px 2px 3px #737373; */
+  text-align: center;
+  border: none;
+  margin: 20% auto;
+}
+
+.back_btn:hover {
+  cursor: grab;
+  font-weight: 600;
+  background-color: #6b9782;
+  transform: scale(1.1);
 }

@@ -331,3 +331,14 @@ textarea:focus-visible {
     transform: translateY(-15px);
   }
 }
+
+/* CHANGE PAGE ANIMATION */
+/* add in the future */
+.page_animation {
+  animation-name: pageTransition;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes pageTransition {
+}
