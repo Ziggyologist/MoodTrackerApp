@@ -1,0 +1,75 @@
+img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.original_template_container div {
+  width: 50vw;
+  margin: 5px auto;
+}
+
+.button_div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.back_btn {
+  margin: 0 auto;
+}
+
+.more_info {
+  padding: 0.5em 1em;
+  margin: 0;
+  background: white;
+  position: fixed;
+  top: 20vh;
+  right: 0;
+  max-width: 100px;
+  font-size: 16px;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #709f88;
+  border: 2px solid #e2beb9;
+  animation-name: bouncer;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.more_info:hover {
+  cursor: pointer;
+}
+
+@keyframes bouncer {
+  30% {
+    transform: translateY(-15px);
+  }
+}
+.back_btn {
+  font-size: 21px;
+  /* width: 30vw; */
+  /* font-weight: 600; */
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+  color: black;
+  background-color: #82b69d;
+  border-radius: 0.5rem;
+  /* margin: 1vh 5vw 2vh 5vw; */
+  /* box-shadow: 0px -3px 2px 3px #ffffff, 0px 3px 2px 3px #737373; */
+  text-align: center;
+  border: none;
+  margin-top: 10%;
+  margin: 0 auto;
+}
+
+.back_btn:hover {
+  cursor: grab;
+  font-weight: 600;
+  background-color: #6b9782;
+  transform: scale(1.1);
+}

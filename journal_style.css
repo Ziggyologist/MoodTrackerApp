@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 900;
+  color: #95645d;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
+
+.journal_container {
+  background-image: url("ASSETS/journal_bkg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.journal_entry_container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  /* border: 1px purple solid; */
+}
+.add_journal_entry {
+  /* border: 1px orange solid; */
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.add_journal_entry_btn {
+  height: 55px;
+  width: 55px;
+  color: #95645d;
+  font-size: 3em;
+  text-align: center;
+  background-color: #c38a82;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.add_journal_entry_btn:hover {
+  border: 2px solid #95645d;
+  transform: scale(1.2);
+  text-align: center;
+  line-height: 0.5;
+}
+
+.journal_entry_area {
+  width: 40vw;
+}
+
+.journal_entry_individual_container {
+  background-color: white;
+  /* border: green 3px solid; */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  min-width: 30vw;
+  max-width: 700px;
+  justify-self: center;
+}
+
+.entry_body {
+  margin: 0 1rem;
+  text-align: justify;
+}
+
+.journal_entry_navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #e2beb9;
+  justify-content: space-between;
+  padding: 0.2rem;
+  margin: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.text_input_journal {
+  background-color: transparent;
+  color: black;
+  border: none;
+  width: 100%;
+}
+
+.entry_submit_button {
+  margin-top: 0.5rem;
+  /* border: pink solid 2px; */
+  text-align: end;
+}
+
+.entry_submit_button button {
+  border: #709f88 solid 2px;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+}
+
+.entry_submit_button button:hover {
+  transform: scale(1.1);
+}
+
+.entry_submit_button button:active {
+  background-color: #b9e2ce;
+  border: 2px solid #709f88;
+}
+
+.printed_entry {
+  max-width: 80vw;
+  max-height: 60vh;
+  margin: 0 auto;
+  opacity: 75%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.date_input_journal {
+  width: 80%;
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2beb9;
+  border-radius: 0.5rem;
+  margin-block: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c48b83;
+  border: #e2beb9 solid 2px;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #775652;
+}
+
+/* date edit */
+::-webkit-datetime-edit-fields-wrapper:hover {
+  background: rgb(230, 226, 226);
+}
+
+.hide {
+  display: none;
+}
+
+.message {
+  text-align: center;
+  color: gray;
+  margin-top: 5px;
+}
+
+.add_journal_entry_btn:hover + .hide {
+  display: block;
+}
