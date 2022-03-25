@@ -331,6 +331,26 @@ textarea:focus-visible {
     transform: translateY(-15px);
   }
 }
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2beb9;
+  border-radius: 0.5rem;
+  margin-block: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c48b83;
+  border: #e2beb9 solid 2px;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #775652;
+}
 
 /* CHANGE PAGE ANIMATION */
 /* add in the future */
