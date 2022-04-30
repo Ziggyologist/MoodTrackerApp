@@ -1,0 +1,76 @@
+.hide {
+  display: none;
+}
+.add_habit_entry {
+  /* border: 1px orange solid; */
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.add_habit_entry_btn {
+  height: 55px;
+  width: 55px;
+  color: #95645d;
+  font-size: 3em;
+  text-align: center;
+  background-color: #c38a82;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.add_habit_entry_btn:hover {
+  border: 2px solid #95645d;
+  transform: scale(1.2);
+  text-align: center;
+  line-height: 0.5;
+}
+
+.habit_container {
+  max-height: 80vh;
+}
+
+.habit_modal {
+  /* height: 50vh;
+  width: 60vw;
+  background-color: white;
+  color: #709f88;
+  border-radius: 2rem;
+  margin: 2rem;
+ */
+
+  padding: 1em;
+  margin: 0;
+  background: white;
+  position: fixed;
+  max-width: 70vw;
+  max-height: 60vh;
+  top: 20%;
+  border-radius: 0.5rem;
+  border: 2px solid #b9e2ce;
+  text-decoration: none;
+}
+
+.habit_form {
+  padding: 2rem;
+}
+
+.habit_form input {
+  margin: 2rem 0;
+}
+
+#color1,
+#color2,
+#color3,
+#color4,
+#color5 {
+  background-color: transparent;
+  border: none;
+}
+
+#frequency {
+  color: grey;
+}
+
+#frequency:hover {
+  color: black;
+}
