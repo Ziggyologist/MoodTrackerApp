@@ -257,3 +257,7 @@
   background-color: #6b9782;
   transform: scale(1.1);
 }
+
+.list_container {
+  padding: 40px;
+}
