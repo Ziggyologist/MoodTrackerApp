@@ -32,7 +32,8 @@
 }
 
 .habit_container {
-  max-height: 80vh;
+  max-height: 500px;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -49,9 +50,11 @@
 }
 
 .habit_name_col {
-  border: 2px solid black;
-  padding: 0 2rem;
+  border: 2px solid transparent;
   align-self: flex-end;
+  width: 20%;
+  overflow: hidden;
+  text-align: right;
 }
 
 .habit_calendar {
@@ -67,18 +70,22 @@
   /* background-color: red; */
   text-align: center;
   align-content: center;
-  border: 2px solid black;
+  /* border: 2px solid transparent; */
 }
 
 .triangle {
-  fill: green;
-  border: 2px orange solid;
+  /* fill: #70a089; */
+  border: 2px transparent solid;
   display: flex;
+}
+.polygon_triangle {
+  fill: transparent;
+  stroke: black;
 }
 
 .dayLetter {
   margin-bottom: -25px;
-  border: 2px blue solid;
+  border: 2px transparent solid;
 }
 
 .habit_modal {
