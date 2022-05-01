@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+.journal_container {
+  background-image: url("./ASSETS/raindeer_shadow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hide {
   display: none;
 }
