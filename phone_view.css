@@ -1,0 +1,123 @@
+/* ALL */
+@media only screen and (max-width: 420px) {
+  .container {
+    height: 100vh;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .title {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding: 0.6rem;
+    margin: 3vh 1vw 2vh 1vw;
+  }
+
+  .footer {
+    width: 100%;
+    border-radius: 0%;
+    height: 15vh;
+    font-size: 21px;
+    align-self: flex-end;
+    margin: auto auto 1px auto;
+  }
+  .footer .col:hover {
+    padding: 3rem 1rem;
+    overflow: hidden;
+    gap: 0;
+  }
+}
+
+/* MAIN POSTER PAGE */
+@media only screen and (max-width: 420px) {
+  .planning_btn {
+    font-size: 25px;
+    width: 300px;
+  }
+  .main_menu svg {
+    height: 30%;
+  }
+}
+
+/* MOUNTAIN */
+
+@media only screen and (max-width: 420px) {
+  .color_squares {
+    gap: 3px;
+  }
+
+  .awesome,
+  .good,
+  .ok,
+  .bad,
+  .terrible {
+    height: 50px;
+    width: 50px;
+    border-radius: 1rem;
+  }
+
+  .color_names {
+    gap: 3px;
+  }
+
+  .color_name {
+    width: 50px;
+  }
+
+  .modal {
+    width: 90vw;
+    padding: 1em;
+    margin: 0;
+    background: white;
+    position: fixed;
+    height: 50vh;
+    top: 2vh;
+    left: 4vw;
+  }
+  .modal_submit_button,
+  .cancel_btn {
+    padding: 2px 15px;
+  }
+}
+
+/* JOURNAL */
+@media only screen and (max-width: 420px) {
+  .journal_entry_area {
+    width: 90vw;
+  }
+}
+
+/* HABIT */
+@media only screen and (max-width: 420px) {
+  .mountain_form h1 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  .habit_form input {
+    margin: 1rem 0;
+  }
+  .dayLetter {
+    margin-bottom: -25px;
+  }
+}
+
+/* LEGEND */
+@media only screen and (max-width: 420px) {
+  .list_container,
+  li,
+  ol,
+  ul {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .list_body {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .list_container {
+    padding-top: 50px;
+  }
+}
