@@ -1,5 +1,5 @@
 /* ALL */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .container {
     height: 100vh;
     margin-top: 0;
@@ -17,10 +17,10 @@
   .footer {
     width: 100%;
     border-radius: 0%;
-    height: 15vh;
+    height: 10vh;
     font-size: 21px;
     align-self: flex-end;
-    margin: auto auto 1px auto;
+    margin: auto auto 25px auto;
   }
   .footer .col:hover {
     padding: 3rem 1rem;
@@ -30,7 +30,7 @@
 }
 
 /* MAIN POSTER PAGE */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .planning_btn {
     font-size: 25px;
     width: 300px;
@@ -42,7 +42,7 @@
 
 /* MOUNTAIN */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .color_squares {
     gap: 3px;
   }
@@ -82,14 +82,14 @@
 }
 
 /* JOURNAL */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .journal_entry_area {
     width: 90vw;
   }
 }
 
 /* HABIT */
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .mountain_form h1 {
     font-size: 22px;
     margin-bottom: 1rem;
@@ -103,7 +103,8 @@
 }
 
 /* LEGEND */
-@media only screen and (max-width: 420px) {
+
+@media only screen and (max-width: 800px) {
   .list_container,
   li,
   ol,
