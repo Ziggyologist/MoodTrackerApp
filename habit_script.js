@@ -154,6 +154,7 @@ const submitModal = function (e) {
     });
   }
   console.log(collectionTriangle);
+  console.log(habits);
 
   // if (weekday[0] === today[0]) console.log("aha");
   // console.log(today);
@@ -184,6 +185,24 @@ const submitModal = function (e) {
   //   document.querySelector(".habit_row").innerHTML += `${add1()}${add2()}`;
   // }
   // addHabit();
+
+  // There is a problem canceling the modal; the plus button won't reappar.
+  const cancelButton = document.querySelector(".cancel_btn");
+
+  // !!!closing the modal not working
+  // const closeModal = function (e) {
+  //   e.preventDefault();
+  //   habitModal.classList.add("hidden");
+  //   addHabitBtn.classList.remove("hide");
+  // };
+
+  // cancelButton.addEventListener("click", closeModal);
+
+  // document.addEventListener("keydown", function (e) {
+  //   if (e.key === "Escape" && !habitModal.classList.contains("hidden")) {
+  //     closeModal();
+  //   }
+  // });
 };
 
 // const cancelModal = function (e) {
@@ -196,3 +215,6 @@ addHabitBtn.addEventListener("click", openModal);
 
 submitModalbtn.addEventListener("click", submitModal);
 // cancelModel.addEventListener("click", cancelModal);
+if (habits) {
+  console.log("There are habits currently");
+}
