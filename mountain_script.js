@@ -17,7 +17,6 @@ const colorMountain = function (polygon) {
     document.getElementById(polygon.id).style.fill = chosenColor;
 
     const coloredPolygon = document.getElementById(polygon.id).style.fill;
-    localStorage.setItem(polygon.id, coloredPolygon);
   }
 };
 
@@ -37,7 +36,6 @@ const changeColor = function (color) {
   if (color === "terrible") {
     chosenColor = colors.terrible;
   }
-  console.log(chosenColor);
 };
 
 // COLOR MOUNTAIN onclick
@@ -56,7 +54,6 @@ const modal = document.querySelector(".modal");
 let dateEntry;
 for (let iDate = 0; iDate < svgText.length; iDate++) {
   svgText[iDate].addEventListener("click", () => {
-    console.log(`You clicked text number ${iDate + 1}`);
     dateEntry = iDate + 1;
     modal.classList.remove("hidden");
     document.querySelector(".container").classList.add("overlay");
@@ -94,10 +91,8 @@ function handleSubmit(event) {
   const journalEntry = document.getElementById("journal_entry").value;
 
   mountainJournalEntries.push({jorunalTitle, journalEntry, dateEntry});
-  console.log(mountainJournalEntries);
   closeModal();
 }
 
 // DISPLAY FORM
 const journalEntries = document.querySelector(".journal_entries");
-console.log(mountainJournalEntries);

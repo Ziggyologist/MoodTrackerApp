@@ -4,7 +4,6 @@ const printedArea = document.querySelector(".printed_entry");
 
 const addJournalEntry = function (event) {
   event.preventDefault();
-  console.log("here");
   journalEntry.classList.remove("hidden");
   journalEntry.innerHTML = `<form class="journal_entry_individual_container">
   <div class="journal_entry_navbar">
@@ -19,7 +18,6 @@ const addJournalEntry = function (event) {
 </form>`;
 
   const submitEntryBtn = document.querySelector(".entry_submit_btn");
-  // console.log(submitEntryBtn);
 
   const printJournalEntry = function (event) {
     event.preventDefault();
@@ -28,17 +26,11 @@ const addJournalEntry = function (event) {
     const entryDate = document.querySelector(".date_input_journal").value;
     const entryBody = document.querySelector(".textarea_input_journal").value;
 
-    console.log(entryTitle, entryDate, entryBody);
-
     journalEntry.classList.add("hidden");
-
-    console.log(event.target);
 
     // online
     const data = new FormData(event.target);
-    // const value = data.get("entryTitle");
     const value = Object.fromEntries(data.entries());
-    console.log({value});
 
     if (!entryBody) {
       alert("You haven't written an entry");
@@ -62,4 +54,3 @@ const addJournalEntry = function (event) {
   form.addEventListener("submit", printJournalEntry);
 };
 addEntryBtn.addEventListener("click", addJournalEntry);
-// addEntryBtn.addEventListener("click", printJournalEntry);

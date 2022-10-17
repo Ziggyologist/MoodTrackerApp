@@ -9,7 +9,6 @@ const cancelbtn = document.querySelector(".cancel_btn");
 const habits = [];
 
 const openModal = function () {
-  console.log("I opened");
   habitModal.classList.remove("hide");
   addHabitBtn.classList.add("hide");
 };
@@ -30,7 +29,6 @@ const submitModal = function (e) {
     habitColor,
   };
   habits.push(habit);
-  console.log(habits);
 
   // get date
   const weekday = [
@@ -47,7 +45,6 @@ const submitModal = function (e) {
   let today = weekday[d.getDay()][0];
   let day = weekday[d.getDay()];
   if (today === "S") today = day;
-  console.log(today);
 
   habitContainer.innerHTML += `
           <div class="habit_row">
@@ -149,12 +146,9 @@ const submitModal = function (e) {
   const collectionTriangle = document.querySelectorAll(".polygon_triangle");
   for (const [i, triangle] of collectionTriangle.entries()) {
     triangle.addEventListener("click", () => {
-      console.log("ahhh", i);
       triangle.style.fill = `${habitColor}`;
     });
   }
-  console.log(collectionTriangle);
-  console.log(habits);
 
   // if (weekday[0] === today[0]) console.log("aha");
   // console.log(today);
